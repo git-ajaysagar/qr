@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <textarea id="textField" placeholder="Hello! I'm your QR code generator.Enter any text or number to convert."rows="10" cols="10"  
+        onkeyup='updateQRCode(this.value)' onclick="this.focus();
+        this.select();"></textarea>
+    </form>
+        <button>Generate QR Code</button>
+        <br>
+            <div id="qrcode"></div>
+    
+    </div>
+    <script src="qrcode.js"></script>
+    <script src="script.js"></script>
+    
+ <br>
+ <br>
+ 
+<div class="container2">
+    <p>QR CODE READER</p>
+</div>  
+<br>
+<div class="container3">
+    <input type="file" id="file" name="file">
+    <p>QR Code content : <span id="content"></span></p>
+    <script src="qrReader.js"></script>
+</div>
+
+</body>
+</html>
